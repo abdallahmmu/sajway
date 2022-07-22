@@ -19,9 +19,11 @@
           <h2
             class="text-gray-900 font-medium title-font tracking-wider text-md"
           >
-            تواصلو معنا علي الرقم : 201032660909+
+            تواصلو معنا علي الرقم : 201013455022+
           </h2>
-          <p class="text-gray-500">Founder : احمد عبد الفتاح</p>
+          <p class="text-gray-500">
+            Powered by Abdallah Mohammed : Abdallah Mohammed/p>
+          </p>
         </div>
       </div>
     </section>

@@ -25,6 +25,16 @@ const data = computed(() => {
 });
 mealsList.mealsLists = data;
 
+//filterd by catigory lentgh
+
+const FilteredByCatigoryLength = reactive({
+  all: mealsList.mealsLists,
+  sandwitches: mealsList.mealsLists.filter(
+    (meal) => meal.catigory === "ساندوتش"
+  ),
+  meals: mealsList.mealsLists.filter((meal) => meal.catigory === "وجبة"),
+});
+
 // filter the meals from the front end
 const Filtered = computed(() => {
   if (mealsList.currentView === "ساندوتش") {
@@ -43,17 +53,12 @@ const FilterCatigory = (view) => {
 
 <template>
   <spinnerVue v-if="storeMeals.isLoading" />
-  <div class="container px-5 py-16 mx-auto h-screen">
+  <div class="container px-5 py-16 mx-auto md:h-full">
     <!-- Filtered BY CATIGORY-->
     <FilteredByCatigory @setView="FilterCatigory" />
     <!-- Product ITEM
     -->
-    <div
-      v-if="storeMeals.meals.length <= 0"
-      class="flex items-center justify-center text-2xl font-bold mt-10"
-    >
-      لا يوجد
-    </div>
+    
     <ProductItem :meals="Filtered" />
   </div>
 </template>
