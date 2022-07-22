@@ -144,7 +144,7 @@ const loginUser = async () => {
         <img
           ref="img"
           class="hidden object-cover w-full shadow-2xl h-1/2-screen md:block"
-          src="https://scontent.fcai21-4.fna.fbcdn.net/v/t39.30808-6/257444315_219889813591615_4332027838690486207_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=0sTFECbR0LEAX9dSCwd&_nc_ht=scontent.fcai21-4.fna&oh=00_AT_7KuWwFVsgeN26-bGFpgHrvgkM5BPi6BeIN0ypBL_Heg&oe=62D56B01"
+          src="./../../assets/img/سوبر فروجه.jpg"
         />
       </div>
     </div>
