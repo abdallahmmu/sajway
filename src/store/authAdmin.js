@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import { getAuth, signInWithEmailAndPassword,onAuthStateChanged ,signOut  } from "firebase/auth";
 import router from '../Router'
 
-export const AuthStore = defineStore('auth', {
+export const authStore = defineStore('auth', {
     state () {  
         return {
             adminID: {},

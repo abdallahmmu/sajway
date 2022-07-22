@@ -5,8 +5,8 @@ import { required, email } from "@vuelidate/validators";
 import { computed } from "@vue/reactivity";
 import ErrorVue from "../UI/Error.vue";
 
-import { AuthStore } from "../../store/AuthAdmin";
-const auth = AuthStore();
+import { authStore } from "../../store/AuthAdmin";
+const auth = authStore();
 
 const userInfo = reactive({
   email: "sajway@admin.com",

@@ -1,6 +1,6 @@
 <script setup>
-import { AuthStore } from "./../../store/authAdmin";
-const auth = AuthStore();
+import { authStore } from "./../../store/authAdmin";
+const auth = authStore();
 
 const logOut = () => {
   auth.logMeOut();
