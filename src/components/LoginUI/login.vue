@@ -144,7 +144,7 @@ const loginUser = async () => {
         <img
           ref="img"
           class="hidden object-cover w-full shadow-2xl h-1/2-screen md:block"
-          src="./../../assets/img/سوبر فروجه.jpg"
+          src="./../../assets/img/لوجين.jpg"
         />
       </div>
     </div>
