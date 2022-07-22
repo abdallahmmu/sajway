@@ -46,6 +46,7 @@ const UploadImage = (file) => {
 
   axios({
     method: "post",
+    secure: true,
     url: CLOUDINARY_BASE_URL,
     data: formData,
   }).then((res) => {
@@ -180,7 +181,7 @@ const v$ = useVuelidate(rules, formAdd);
                   v-if="formAdd.image"
                   class="w-24 h-24"
                   :src="formAdd.image"
-                  alt=""
+                  alt="صورة منتج"
                 />
                 <p v-if="!imageisLoading">جاري تحميل الصورة يرجي الانتظار ..</p>
               </div>

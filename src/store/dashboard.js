@@ -93,6 +93,7 @@ export const dashboardStore = defineStore('dashboard', {
             method: "post",
             url: CLOUDINARY_BASE_URL,
             data: formData,
+            secure:true
             }).then((res) => {
             this.editedImage = res.data.url;
         
