@@ -40,10 +40,3 @@ we prefered to use tailwindcss it's a handy and easy way to configuer the utilit
 
 
 
-
-
-
-
-  <transition name="fade" mode="out-in">
-    <alertVue title="تنبية" subTitle="لقد قمة بأضافة شيء جديد " />
-  </transition>

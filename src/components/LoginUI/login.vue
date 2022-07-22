@@ -1,9 +1,10 @@
 <script setup>
 import { onMounted, reactive, ref } from "vue";
 import useVuelidate from "@vuelidate/core";
-import { required, email, sameAs, minLength } from "@vuelidate/validators";
+import { required, email } from "@vuelidate/validators";
 import { computed } from "@vue/reactivity";
 import ErrorVue from "../UI/Error.vue";
+
 import { AuthStore } from "../../store/AuthAdmin";
 const auth = AuthStore();
 
